@@ -1,9 +1,9 @@
 <?php 
 
-if(!defined('BASEPATH')){ define('BASEPATH', dirname(__FILE__)); }
+if(!defined('BASEPATH')){ require "config.php"; }
 
-require BASEPATH."/app/bootstrap.php";
+define('BASEPATH', $config['basepath']);
 
-
+include BASEPATH."/app/bootstrap.php";
 
 ?>

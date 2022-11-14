@@ -1,0 +1,16 @@
+{
+    "name": "loonaticdota/pprg",
+    "description": "Website PPRG Sulawesi Tengah",
+    "autoload": {
+        "psr-4": {
+            "Loonaticdota\\Pprg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "loonaticdota",
+            "email": "yoavisena@gmail.com"
+        }
+    ],
+    "require": {}
+}
