@@ -23,7 +23,6 @@ else {
     // Load Available Request
     $router = new Router;
     $router->load($request);
-    
         
 }
 

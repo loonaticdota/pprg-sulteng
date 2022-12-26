@@ -10,10 +10,14 @@ class Router {
 
             case "home":
             include(BASEPATH."/user/controller/home/home.php");
+            $class = new Home;
+            $class->home();
             break;
 
             case "login":
             include(BASEPATH."/user/controller/home/login.php");
+            $class = new Login;
+            $class->login();
             break;
 
 
@@ -23,6 +27,8 @@ class Router {
             break;
 
         }
+
+        
 
     }
 

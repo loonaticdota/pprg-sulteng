@@ -9,32 +9,28 @@ class Controller {
 
     function render($kind, $dir, $data)
     {
-
         ob_start();
 
         switch($kind){
-
 
             case "parent":
 
             foreach($data as $structure){
 
-                if(!$structure['file'] || $structure['file'] == ""){
+                if(!$structure[0] || $structure[0] == ""){
 
-                include(BASEPATH."/user/view/".$dir."/".$structure.".php");
+                include(BASEPATH."/user/view/".$dir."/".$structure[0].".php");
 
                 }
 
                 else {
 
-                include(BASEPATH."/user/view/".$dir."/".$structure['file'].".php");
-
+                include(BASEPATH."/user/view/".$dir."/".$structure.".php");
                 }
         
             }
                 
             break;
-
 
             case "child":
 

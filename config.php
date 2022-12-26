@@ -23,7 +23,7 @@ $dbinfo = array(
     "host"             =>   "localhost",
     "username"         =>   "root",
     "password"         =>   "",
-    "dbname"           =>   "webgis"
+    "dbname"           =>   "pprg"
 
 );
 
